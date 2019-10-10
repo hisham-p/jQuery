@@ -1,4 +1,4 @@
-<!-- How to get textarea text using jQuery. -->
+<!-- How to detect whether the user has pressed 'Enter Key' using jQuery. -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,20 +10,17 @@
 </head>
 
 <body>
-    <textarea name="text" id="text" cols="30" rows="10" placeholder="text in the text area">
-</textarea>
-    <button>click here to make textarea contents to list
-    </button>
-    <ul></ul>
+    <input type="text" name="text" id="text">
 </body>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 </script>
 <script type="text/javascript" language="javascript">
     $(document).ready(function () {
-        $("button").click(function () {
-            let value = $("#text").val();
-            $("ul").append("<li>" + value + "</li>")
-        });
+        $("input").on("keydown", function (key) {
+            if (key.which === 13) {
+                alert("Enter key pressed");
+            }
+        })
     });
 </script>
 

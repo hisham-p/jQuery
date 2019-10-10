@@ -1,0 +1,71 @@
+<!-- Find the absolute position of an element using jQuery. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>&ltli&gtitem1&lt/li&gt</li>
+        <li>&ltli&gtitem2&lt/li&gt</li>
+        <li>&ltli&gtitem3&lt/li&gt</li>
+        <li>&ltli&gtitem4&lt/li&gt</li>
+        <li>&ltli&gtitem5&lt/li&gt</li>
+        <li>&ltli&gtitem6&lt/li&gt</li>
+    </ul>
+    <input type="text" name="text" id="text" placeholder="Enter the list number">
+    <button>submit</button>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        document.write(html());
+        $("button").click(function () {
+            let value = Number($("#text").val());
+                    
+        });
+    });
+</script>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Find the absolute position of an element using jQuery</title>
+</head>
+<body>
+<form id="myForm" action="sample.php">
+First name:<br>
+<input type="text" id="name1" name="firstname">
+<br>
+Last name:<br>
+<input type="text" id="name2" name="lastname">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  var left_position = $("#name1").offset().left - $(document).scrollTop();
+alert('Left: '+left_position);
+
+var top_position = $("#name2").offset().top - $(document).scrollTop();
+alert('Right: '+top_position);
+
+});
+
+</script>
+</html> -->
